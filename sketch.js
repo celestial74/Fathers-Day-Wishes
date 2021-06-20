@@ -23,6 +23,10 @@ function preload() {
 
 function setup() {
     createCanvas(windowWidth,windowHeight);
+    
+    fill("black");
+    textSize(17);
+    text("Website by-\nAnuj",width-100,height-100);
 
     img1=createSprite(width/2,height/2,40,40);
     img1.addAnimation("img0",img_[0]);
