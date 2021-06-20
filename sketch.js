@@ -143,5 +143,5 @@ function draw() {
     
     fill("black");
     textSize(17);
-    text("Website \nby-\nAnuj/nDoddakaragi",width-100,height-100);
+    text("Website &\nwishes \nby-\nAnuj/nDoddakaragi",width-100,height-100);
 }
