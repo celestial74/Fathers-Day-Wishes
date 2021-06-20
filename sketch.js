@@ -23,10 +23,6 @@ function preload() {
 
 function setup() {
     createCanvas(windowWidth,windowHeight);
-    
-    fill("black");
-    textSize(17);
-    text("Website by-\nAnuj",width-100,height-100);
 
     img1=createSprite(width/2,height/2,40,40);
     img1.addAnimation("img0",img_[0]);
@@ -56,14 +52,14 @@ function setup() {
         img3.scale=height/500-0.5;
     }
     if(width>height){
-        img3.scale=width/1000-1;
+        img3.scale=width/1000-0.5;
     }
 
     img4=createSprite(width/2,height/2,40,40);
     img4.addAnimation("img0",img_[3]);
     
     if(width>=height){
-        img4.scale=height/500;
+        img4.scale=height/500-1;
     }
     if(width<height){
         img4.scale=width/1000;
@@ -83,7 +79,7 @@ function setup() {
     img6.addAnimation("img0",img_[5]);
     
     if(width>=height){
-        img6.scale=height/500;
+        img6.scale=height/500-1;
     }
     if(width<height){
         img6.scale=width/1000;
@@ -144,4 +140,8 @@ function draw() {
     }
 
     drawSprites();
+    
+    fill("black");
+    textSize(17);
+    text("Website &\nwishes \nby-\nAnuj\nDoddakaragi",width-100,height-100);
 }
