@@ -52,7 +52,7 @@ function setup() {
         img3.scale=height/500-0.5;
     }
     if(width>height){
-        img3.scale=width/1000-1;
+        img3.scale=width/1000-1.5;
     }
 
     img4=createSprite(width/2,height/2,40,40);
@@ -79,7 +79,7 @@ function setup() {
     img6.addAnimation("img0",img_[5]);
     
     if(width>=height){
-        img6.scale=height/500;
+        img6.scale=height/500-1;
     }
     if(width<height){
         img6.scale=width/1000;
